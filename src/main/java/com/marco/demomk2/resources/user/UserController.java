@@ -1,4 +1,4 @@
-package com.marco.demomk2.controllers;
+package com.marco.demomk2.resources.user;
 
 import com.google.gson.JsonObject;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ public class UserController {
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     public String getTestValue() {
-        JsonObject obj =new JsonObject();
+        JsonObject obj = new JsonObject();
 
         obj.addProperty("title", "테스트3");
         obj.addProperty("content", "테스트3 내용");
